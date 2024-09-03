@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+# Orest Burmei Code Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Orest Burmei Code Challenge repository. This project includes a series of tasks and improvements that have been made to enhance the functionality and performance of the code. Below you'll find an overview of the tasks completed and the refactoring that was done.
 
-## Available Scripts
+## Tasks
 
-In the project directory, you can run:
+### Task 1: Sum Calculation Functions
 
-### `npm start`
+Implemented three different functions and tests to calculate the sum of integers from 1 to `n` using different approaches
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Task 2: Currency Swap Form
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Implemented a currency swap form that allows users to select currencies, enter an amount, and see the converted amount based on live token prices. The form utilizes React, TypeScript, and Material-UI (MUI) for building the user interface and handling form state.
 
-### `npm test`
+**Key Features:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Currency selection using a dropdown menu
+- Real-time conversion based on token prices
+- Error handling for API calls
+- Snackbar notifications for successful swaps
 
-### `npm run build`
+### Task 3: Wallet Page Refactoring
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Refactored the Wallet Page to improve performance and code readability. This included optimizing the sorting and filtering of wallet balances, as well as memoizing functions to prevent unnecessary recalculations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Refactoring Details:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Memoized `getPriority`:** Converted `getPriority` into a memoized function to avoid unnecessary recalculations.
+- **Combined Formatting and Mapping:** Combined the formatting and mapping of data for rows to simplify processing.
+- **Updated Dependency Array in `useMemo`:** Removed unnecessary dependencies from the dependency array to improve efficiency.
+- **Optimized Sorting:** Simplified the sorting logic to enhance performance.
+- **Used Unique Key:** Replaced `index` with `balance.currency` for better performance and correct rendering.
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To get started with this project, clone the repository and install the dependencies:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/ordila/Orest_Burmei_FE
+cd Orest_Burmei_FE
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
